@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background: #fff; ;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    }
+
+         .row{
+            height: 88%;
+            display: flex;
+            align-items: center;
+         }
+
+         .col{
+            flex-basis: 50%;
+         }
+         h1{
+            font-size: 100px;
+            color: #009b77;
+         }
+         button{
+            width: 180px;
+            color: #fff;
+            font-size: 12px;
+            padding: 12px 0;
+            background: #009b77;
+            border: 1;
+            border-radius: 20px;
+            outline: none;
+            margin-top: 30px;
+         }
+
+         .card{
+            width: 200px;
+            height: 230px;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 10px 15px;
+            background-size: cover;
+            background-position: center;
+            
+        }
+
+        .card1{
+            background-image: url(Images/Breakfast.jpeg);
+         }
+         .card2{
+            background-image: url(Images/lunch.jpeg);
+         }
+         .card3{
+            background-image: url(Images/dinner.jpeg);
+         }
+         .card4{
+            background-image: url(Images/Arabic.jpeg);
+         }
+
+         h5{
+            color: #000;
+            text-shadow: 0 0 5px #999;
+            font-size: 19px;
+         }
+
+         .card:hover{
+            transform: translateY(-10px);
+         }
+
+
+        .logo{
+            width: 80px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        .navbar{
+            height: 12%;
+            display: flex;
+            align-items: center;
+        }
+        nav{
+           flex: 1;
+           text-align: right;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 12px;
+        }
+
+        nav ul{
+            float: right;
+            list-style: none;
+            margin-right: 60px;
+            position: relative;
+        }
+        
+        nav ul li{
+            display:inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a{
+            color: #009b77;
+            text-decoration: none;
+            line-height: 70px;
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+        
+        nav ul li a:hover{ 
+            border-radius: 5px;
+            box-shadow: 0 0 5px #33ffff, 0 0 5px #33ffff;
+        
+        }
+        
+        nav ul ul{
+            position: absolute;
+            top: 90px;
+            opacity: 0;
+            visibility: hidden;
+            transition: top .3s;
+        }
+        
+        
+        nav ul li:hover > ul{
+            top: 70px;
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        
+        nav ul ul li{
+            position: relative;
+            margin: 0px;
+            width: 150px;
+            float: none;
+            display: list-item;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);   
+            backdrop-filter: blur(8px);
+     
+        }
+
